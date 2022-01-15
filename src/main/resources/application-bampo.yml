@@ -1,0 +1,22 @@
+bampo:
+  jwt:
+    remember-days: 7
+    refresh-token-ttl: 3600
+    access-token-ttl: 3600
+    issuer: "Fortuna"
+    secret: ${env.BAMPO_JWT_SECRET}
+    access-token-name: "FBAMPOJUAT"
+    refresh-token-name: "FBAMPOJURT"
+    path: "/"
+    secure: false
+    http-only: true
+    same-site: LAX
+  user:
+    verification-token-ttl: 3600
+    mail-resend-interval: 300
+    username-update-interval: 7776000
+  rest-api:
+    host: ${env.BAMPO_REST_HOST}
+  client-host: ${env.BAMPO_CLIENT_HOST}
+  development: true
+  contract-address: ${env.BAMPO_CONTRACT_ADDRESS}

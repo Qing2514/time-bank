@@ -1,0 +1,8 @@
+spring:
+  profiles:
+    include: bampo-prod
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  flyway:
+    baseline-on-migrate: true

@@ -1,0 +1,129 @@
+{
+  "groups": [
+    {
+      "name": "bampo",
+      "type": "com.fortuna.bampo.config.properties.MiscProperties"
+    },
+    {
+      "name": "bampo.jwt",
+      "type": "com.fortuna.bampo.config.properties.JwtProperties"
+    },
+    {
+      "name": "bampo.user",
+      "type": "com.fortuna.bampo.config.properties.UserProperties"
+    },
+    {
+      "name": "bampo.rest-api",
+      "type": "com.fortuna.bampo.config.properties.RestApiProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "bampo.jwt.remember-days",
+      "type": "java.lang.Integer",
+      "description": "Remember days for the remembered authentication.",
+      "sourceType": "com.fortuna.bampo.config.properties.JwtProperties",
+      "defaultValue": 7
+    },
+    {
+      "name": "bampo.jwt.refresh-token-ttl",
+      "type": "java.lang.Integer",
+      "description": "Max-Age for the refresh token.",
+      "sourceType": "com.fortuna.bampo.config.properties.JwtProperties",
+      "defaultValue": 3600
+    },
+    {
+      "name": "bampo.jwt.access-token-ttl",
+      "type": "java.lang.Integer",
+      "description": "Max-Age for the access token.",
+      "sourceType": "com.fortuna.bampo.config.properties.JwtProperties",
+      "defaultValue": 3600
+    },
+    {
+      "name": "bampo.jwt.access-token-name",
+      "type": "java.lang.String",
+      "description": "Cookie name for the access token.",
+      "sourceType": "com.fortuna.bampo.config.properties.JwtProperties"
+    },
+    {
+      "name": "bampo.jwt.refresh-token-name",
+      "type": "java.lang.String",
+      "description": "Cookie name for the refresh token.",
+      "sourceType": "com.fortuna.bampo.config.properties.JwtProperties"
+    },
+    {
+      "name": "bampo.jwt.path",
+      "type": "java.lang.String",
+      "description": "Path value for the jwt cookie.",
+      "sourceType": "com.fortuna.bampo.config.properties.JwtProperties",
+      "defaultValue": "/"
+    },
+    {
+      "name": "bampo.jwt.secure",
+      "type": "java.lang.Boolean",
+      "description": "Secure value for the jwt cookie.",
+      "sourceType": "com.fortuna.bampo.config.properties.JwtProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "bampo.jwt.http-only",
+      "type": "java.lang.Boolean",
+      "description": "Http-Only value for the jwt cookie.",
+      "sourceType": "com.fortuna.bampo.config.properties.JwtProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "bampo.jwt.same-site",
+      "type": "org.springframework.boot.web.server.Cookie$SameSite",
+      "description": "Same-Site value for the jwt cookie.",
+      "sourceType": "com.fortuna.bampo.config.properties.JwtProperties",
+      "defaultValue": "lax"
+    },
+    {
+      "name": "bampo.user.verification-token-ttl",
+      "type": "java.lang.Integer",
+      "description": "Expiration time for the user verification token.",
+      "sourceType": "com.fortuna.bampo.config.properties.UserProperties",
+      "defaultValue": 3600
+    },
+    {
+      "name": "bampo.user.mail-resend-interval",
+      "type": "java.lang.Integer",
+      "description": "Interval of resending verification mail.",
+      "sourceType": "com.fortuna.bampo.config.properties.UserProperties",
+      "defaultValue": 300
+    },
+    {
+      "name": "bampo.user.username-update-interval",
+      "type": "java.lang.Integer",
+      "description": "Interval of modifying username.",
+      "sourceType": "com.fortuna.bampo.config.properties.UserProperties",
+      "defaultValue": 7776000
+    },
+    {
+      "name": "bampo.rest-api.host",
+      "type": "java.lang.String",
+      "description": "Host of the restful api (Full URL).",
+      "sourceType": "com.fortuna.bampo.config.properties.RestApiProperties"
+    },
+    {
+      "name": "bampo.client-host",
+      "type": "java.lang.String",
+      "description": "Host of the client (Full URL).",
+      "sourceType": "com.fortuna.bampo.config.properties.MiscProperties"
+    },
+    {
+      "name": "bampo.development",
+      "type": "java.lang.Boolean",
+      "description": "Whether the application is running in development mode.",
+      "sourceType": "com.fortuna.bampo.config.properties.MiscProperties",
+      "defaultValue": "false"
+    },
+    {
+      "name": "bampo.contract-address",
+      "type": "java.lang.String",
+      "description": "Contract address of the application.",
+      "sourceType": "com.fortuna.bampo.config.properties.MiscProperties"
+    }
+  ]
+}
